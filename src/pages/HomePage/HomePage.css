@@ -141,8 +141,11 @@
     }
 
     .image {
-        padding:0;
-        margin-bottom:40px;
+      padding:0;
+      margin-bottom:40px;
+        
+      display: flex;
+      flex-direction: column;
     }
   
     .logo-image.search-activated {
@@ -171,6 +174,9 @@
     .logo-image.search-activated .image img.nome {
       height: 50px;
       width: auto;
+    }
+    .query.search-activated{
+      max-width: 100%;
     }
   
     .query input {

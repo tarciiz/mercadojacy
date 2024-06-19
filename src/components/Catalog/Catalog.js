@@ -1,20 +1,11 @@
 import React,  { useEffect, useState } from 'react'; 
 import './Catalog.css';
 import { createClient } from '@supabase/supabase-js'
-
-// const products = [
-//   { id: 1, name: 'Produto 1', price: 'R$ 100,00', image: 'https://cdn-cosmos.bluesoft.com.br/products/7896005309988' },
-//   { id: 2, name: 'Produto 2', price: 'R$ 200,00', image: 'https://cdn-cosmos.bluesoft.com.br/products/7896945402282' },
-//   { id: 3, name: 'Produto 3', price: 'R$ 300,00', image: 'https://via.placeholder.com/150' },
-//   { id: 4, name: 'Produto 4', price: 'R$ 400,00', image: 'https://via.placeholder.com/150' },
-//   { id: 5, name: 'Produto 5', price: 'R$ 500,00', image: 'https://via.placeholder.com/150' },
-//   { id: 6, name: 'Produto 6', price: 'R$ 600,00', image: 'https://via.placeholder.com/150' },
-// ];
-
-
           
 const Catalog = ({ title, q }) => {
-    const supabase = createClient('https://takziyqllixacfdastcg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRha3ppeXFsbGl4YWNmZGFzdGNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg3NDYwMDAsImV4cCI6MjAzNDMyMjAwMH0.Q7CmfW1sftRnnBfWznYZ9OUkCt5aXsQ7spjKteNriWs')
+    const url = process.env.REACT_APP_SUPERBASE_URL
+    const token = process.env.REACT_APP_SUPERBASE_TOKEN
+    const supabase = createClient(url, token)
 
     const [products, setProducts] = useState([]);
 
