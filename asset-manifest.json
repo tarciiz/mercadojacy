@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mercadojacy/static/css/main.c06b39d8.css",
+    "main.js": "/mercadojacy/static/js/main.03c80c26.js",
+    "static/js/952.fecfe7c9.chunk.js": "/mercadojacy/static/js/952.fecfe7c9.chunk.js",
+    "static/js/453.45ff69ea.chunk.js": "/mercadojacy/static/js/453.45ff69ea.chunk.js",
+    "index.html": "/mercadojacy/index.html",
+    "main.c06b39d8.css.map": "/mercadojacy/static/css/main.c06b39d8.css.map",
+    "main.03c80c26.js.map": "/mercadojacy/static/js/main.03c80c26.js.map",
+    "952.fecfe7c9.chunk.js.map": "/mercadojacy/static/js/952.fecfe7c9.chunk.js.map",
+    "453.45ff69ea.chunk.js.map": "/mercadojacy/static/js/453.45ff69ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c06b39d8.css",
+    "static/js/main.03c80c26.js"
+  ]
+}
