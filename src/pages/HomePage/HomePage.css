@@ -1,0 +1,189 @@
+.holtwood-one-sc-regular {
+    font-family: "Holtwood One SC", serif;
+    font-style: normal;
+  }
+  
+  .white-text {
+    color: white;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .white-text.search-activated {
+    color: white;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  .container {
+    height: 100vh;
+    transition: all 0.5s ease;
+  }
+  
+  .logo-image {
+    background-color: #0E4FA3;
+    height: 80vh;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .logo-image.search-activated {
+    height: 20vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5%;
+    transition: all 0.5s ease;
+  }
+  
+  .image img.logo {
+    height: 200px;
+    width: 200px;
+    transition: all 0.5s ease;
+  }
+  
+  .image img.nome {
+    height: auto;
+    width: auto;
+    transition: all 0.5s ease;
+  }
+  
+  .logo-image.search-activated .image {
+    padding-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+  
+  .logo-image.search-activated .image img.logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .logo-image.search-activated .image img.nome {
+    height: 55px;
+    width: auto;
+  }
+  
+  .query {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  
+  .query.search-activated {
+    max-width: 40%;
+    height: auto;
+  }
+  
+  .query input {
+    min-width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333; 
+    outline: none;
+    box-shadow: none; 
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .query button {
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none; 
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .query * {
+    text-decoration: none;
+  }
+  
+  .bottom-div {
+    transition: all 0.5s ease;
+  }
+  
+  .bottom-div.expanded {
+    height: 80vh;
+  }
+  
+  @media (max-width: 600px) {
+    .white-text {
+        font-size: 12px;
+    }
+
+    .logo-image {
+      height: 80vh;
+      justify-content: center;
+    }
+
+    .image {
+        padding:0;
+        margin-bottom:40px;
+    }
+  
+    .logo-image.search-activated {
+      height: 25vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .image img.logo {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .image img.nome {
+      height: auto;
+      width: 100%;
+    }
+  
+    .logo-image.search-activated .image img.logo {
+      height: 40px;
+      width: auto;
+      padding-left: 20px;
+    }
+
+    .logo-image.search-activated .image img.nome {
+      height: 50px;
+      width: auto;
+    }
+  
+    .query input {
+      min-width: 70%;
+      font-size: 16px;
+    }
+  
+    .query button {
+      font-size: 12px;
+    }
+  
+    .bottom-div.expanded {
+      height: 80vh;
+    }
+  }
+  
